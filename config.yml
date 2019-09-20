@@ -1,0 +1,15 @@
+projects: 
+  - 
+    name: projectA
+    repositoryPath: https://username@bitbucket.org/example.com/projectA.git
+    outputName: ROOT.war
+    buildType: war
+    ignore: false
+  - 
+    name: projectB
+    repositoryPath: https://username@bitbucket.org/example.com/projectB.git
+    outputName: projectB.jar
+    buildType: jar
+    ignore: false
+buildTarget: dev, product
+outputDir: C:\Users\kanatani\work\build
