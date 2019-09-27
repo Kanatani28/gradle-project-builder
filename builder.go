@@ -97,8 +97,8 @@ func cloneProjects() {
 			continue
 		}
 		// リポジトリからクローンする
-		cmd := exec.Command("git", "clone", project.RepositoryPath)
-		cmd.Run()
+		gitClone := exec.Command("git", "clone", project.RepositoryPath)
+		gitClone.Run()
 		log.Printf("## End cloning %s .\n", project.Name)
 	}
 	log.Println("# Cloning repositoryies finished .")
